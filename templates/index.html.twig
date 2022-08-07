@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aschehoug case</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <script  type="text/javascript" src="/javascript/javascript.js"></script>
+        <link href="/style/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-0 col-md-2"></div>
+                <div class="col-sm-12 col-md-8 text-center"><h1>Siste saker fra URIX</h1></div>
+                <div class="col-sm-0 col-md-2"></div>
+            </div>   
+            <div class="row content-controls">
+                <div class="col-sm-12 content-control">
+                    Rekkefølge: 
+                    <select id="sort-order">
+                        <option value="desc">Fallende</option>
+                        <option value="asc">Stigende</option>
+                    </select>
+                    Sorter på felt: 
+                    <select id="sort-field">
+                        <option value="dc_date">Dato</option>
+                        <option value="title">Tittel</option>
+                    </select>
+                    <button onClick="javascript:loadRSS();">Endre sortering</button>
+                </div>
+            </div>   
+            <div class="row content-holder">
+                <div class="col-sm-0 col-md-4"></div>
+                <div class="col-sm-12 col-md-4 loading-urix" id="content-field">Laster rss for urix</div>
+                <div class="col-sm-0 col-md-4"></div>
+            </div>          
+        </div>
+    </body>
+</html>

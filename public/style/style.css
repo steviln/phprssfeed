@@ -1,0 +1,20 @@
+body{
+    background-color:lightgrey;
+}
+.content-holder{
+    background-color:white;
+
+}
+.loading-urix{
+    text-align:center;
+    padding-top:180px;
+    min-height:900px;
+}
+.content-controls{
+    background-color:cadetblue;
+}
+.content-control{
+    text-align:center;
+    padding-top:12px;
+    padding-bottom:12px;
+}
