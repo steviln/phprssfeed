@@ -54,7 +54,7 @@
         element.classList.remove('display-urix');
         element.classList.add('loading-urix');
 
-        element.innerHTML = "Laster rss for urix";
+        element.innerHTML = "Laster rss fra urix";
         
     }
     
